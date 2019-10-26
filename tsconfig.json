@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "lib": [
+            "es6"
+        ],
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "types": [],
+        "noEmit": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "*.d.ts"
+    ],
+    "files": [
+        "index.d.ts",
+        "SanityClient.d.ts",
+        "IDataRequestOptions.d.ts",
+        "IRequestOptions.d.ts",
+        "ISanityClientDefaultOptions.d.ts",
+        "ISanityClientOptions.d.ts",
+    ]
+}
