@@ -10,10 +10,13 @@ export declare class SanityClient {
     constructor(options: ISanityClientOptions & Partial<ISanityClientDefaultOptions>);
     auth: {
         getLoginProviders(): Promise<{
-            name: string;
-            title: string;
-            url: string;
-        }[]>;
+            thirdPartyLogin: boolean;
+            providers: {
+                name: string;
+                title: string;
+                url: string;
+            }[];
+        }>;
         logout(): void;
     };
     config(options: ISanityClientOptions & Partial<ISanityClientDefaultOptions>): SanityClient;
